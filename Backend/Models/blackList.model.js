@@ -12,3 +12,7 @@ const BlackListSchema = new Schema({
         expires: 3600, // Token expires after 1 hour
     }
 }, { timestamps: true });
+
+const BlackList = mongoose.model('BlackList', BlackListSchema);
+
+module.exports = BlackList;
