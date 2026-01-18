@@ -41,6 +41,26 @@ const UserSchema = new Schema({
         type: String,
         default: uuidv4
     },
+    goals:{
+        steps:{
+            type: Number,
+        },
+        Goalsteps:{
+            type: Number,
+        },
+        sleepHours:{
+            type: Number,
+        },
+        GoalSleepHours:{
+            type: Number,
+        },
+        WaterIntake:{
+            type: Number,
+        },
+        GoalWaterIntake:{
+            type: Number,
+        }
+    }
     
 }, { timestamps: true });
 
